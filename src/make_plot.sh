@@ -12,6 +12,6 @@ num=$SGE_TASK_ID
 
 file=`sed -n ${num}P ./list_short.txt`
 
-R --vanilla make_plot.R ./result2/r.${file} ./plot/${file}.png
+Rscript --vanilla make_plot.R ./result2/r.${file} ./plot/${file}.png
 
 
